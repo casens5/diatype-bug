@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>font</title>
+    <style>
+      @font-face {
+        font-family: "Diatype Variable";
+        src: url("ABCDiatypeVariable.ttf");
+        font-weight: 100 700;
+      }
+
+      @font-face {
+        font-family: "Amstelvar";
+        src: url("AmstelvarAlpha-VF.ttf");
+        font-weight: 100 700;
+      }
+
+      body {
+        background: #222;
+        color: #facade;
+      }
+
+      .diatype {
+        font-family: "Diatype Variable";
+      }
+
+      .amstelvar {
+        font-family: "Amstelvar";
+      }
+
+      .azure {
+        color: #4ad;
+      }
+
+      .container {
+        width: 500px;
+        height: 500px;
+        margin: auto;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        browser default font:
+        <br />
+        <span class="">
+          jaded zombies acted quietly
+          <span class="azure italic">but kept driving their oxen forward</span>
+        </span>
+      </p>
+      <p>
+        abc diatype:
+        <br />
+        <span class="diatype">
+          jaded zombies acted quietly
+          <span class="azure italic">but kept driving their oxen forward</span>
+        </span>
+      </p>
+      <p>
+        amstelvar:
+        <br />
+        <span class="amstelvar">
+          jaded zombies acted quietly
+          <span class="azure italic">but kept driving their oxen forward</span>
+        </span>
+      </p>
+    </div>
+  </body>
+</html>
